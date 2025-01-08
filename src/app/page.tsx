@@ -1,101 +1,79 @@
+import Nav from "@/components/layout/Nav";
 import Image from "next/image";
+import movil from '@/assets/img/movil.png'
+import aliados from '@/assets/img/movilAliados.png'
+import Carrucel from "@/components/ui/Carrucel";
+import { Activity } from "lucide-react";
 
 export default function Home() {
+  const container = 'max-w-[75rem] mx-auto overflow-hidden'
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <section className="bg-[#FBCD40] w-full">
+        <div className="px-4 border max-w-[75rem] mx-auto">
+          <Nav />
+          <div className="flex items-center flex-col gap-3 mt-12 relative h-[50rem] overflow-hidden">
+            <div className="bg-white w-max px-4 py-2 rounded-full">
+              <span>Transforma tus sueños en realidad</span>
+            </div>
+            <div>
+              <h1 className="text-5xl font-bold uppercase w-[35rem] text-center">Descubre tu camino académico con</h1>
+              <h2 className="text-5xl font-bold uppercase w-[35rem] text-center text-outline">Trulivers</h2>
+            </div>
+            <p className="w-[28rem] text-center">Trulivers conecta a jóvenes con su vocación y abre las puertas hacia la educación superior, ofreciendo beneficios exclusivos con nuestras universidades aliadas.</p>
+            <Image className="absolute w-[20rem] left-0 -bottom-[10pc] -rotate-6" src={movil} alt="Imagen de un telefono con una pantalla de la app de trulivers" />
+            <Image className="absolute w-[20rem] left-1/2 -translate-x-1/2 -bottom-[7pc]" src={movil} alt="Imagen de un telefono con una pantalla de la app de trulivers" />
+            <Image className="absolute w-[20rem] right-0 -bottom-[10pc] rotate-6" src={movil} alt="Imagen de un telefono con una pantalla de la app de trulivers" />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      <section className={`${container} border`}>
+        <div className="h-[45rem] flex items-end">
+          <div className="grid grid-cols-2 w-full">
+            <div className="flex justify-end">
+              <Image className="w-[26rem]" src={aliados} alt="imagen de un telefono con el logo de TRULIVERS" />
+            </div>
+            <div className="overflow-hidden flex flex-col justify-center">
+              <h2 className="font-extrabold text-2xl text-start uppercase w-[14rem]">Nuestros socios e inversores.</h2>
+              <Carrucel />
+              <button className="bg-[#F6C416] px-4 py-1 rounded-full w-max">Contáctate con nosotros</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className={`${container} border h-[30rem] flex flex-col items-center justify-center`}>
+        <h2 className="font-bold text-2xl mb-5">Nuestros Servicios</h2>
+        <div className="grid grid-cols-2 items-center gap-5 justify-items-center">
+          <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
+            <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
+              <Activity size='2rem' />
+            </div>
+            <h3 className="font-semibold text-xl text-center">Orientación Vocacional Personalizada</h3>
+            <p className="text-sm text-center">Realiza nuestra prueba psico-orientadora y descubre la carrera ideal para ti.</p>
+          </div>
+          <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
+            <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
+              <Activity size='2rem' />
+            </div>
+            <h3 className="font-semibold text-xl">Acceso a Educación Superior</h3>
+            <p className="text-sm text-center">Te conectamos con universidades aliadas que ofrecen programas académicos a tu medida.</p>
+          </div>
+          <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
+            <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
+              <Activity size='2rem' />
+            </div>
+            <h3 className="font-semibold text-xl">Cupones Exclusivos</h3>
+            <p className="text-sm text-center">Obtén cupones con descuentos únicos de hasta el 60% en matrículas universitarias.</p>
+          </div>
+          <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
+            <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
+              <Activity size='2rem' />
+            </div>
+            <h3 className="font-semibold text-xl">Soporte Personalizado</h3>
+            <p className="text-sm text-center">Nuestro equipo está disponible para ayudarte a resolver tus dudas sobre el proceso educativo.</p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
