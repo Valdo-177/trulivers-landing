@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import React from 'react'
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '../ui/select'
 import LanguageSelector from '../ui/SelectLanguaje'
 import { Button } from '../ui/button'
 

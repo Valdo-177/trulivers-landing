@@ -97,9 +97,17 @@ body {
 }
 
 
+
 @media (width <= 48rem) {
   .bgHero {
     background-image: linear-gradient(to right, white 60%, rgba(255, 255, 255, 0) 131%),
-      url("../assets/img/heroBg.png");
+    url("../assets/img/heroBg.png");
+  }
+}
+
+@media (width <= 40rem) {
+  .bgHero {
+    background-image: linear-gradient(to right, white 100%, rgba(255, 255, 255, 0) 0%),
+    url(/_next/static/media/heroBg.4aaf60c5.png);
   }
 }
