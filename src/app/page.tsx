@@ -5,6 +5,7 @@ import movilAliados from "@/assets/img/movilAliados.png"
 import { Global, IconBenet, IconRow, IconRow2, LogoUni, Message } from "@/assets/svg";
 import estudiante from "@/assets/img/estudiante.jpg"
 import helpPeople from "@/assets/img/joven.png"
+import Fasq from "@/components/ui/Fasq";
 
 const benefits = [
   {
@@ -45,7 +46,6 @@ export default function Home() {
   return (
     <>
       <div className="px-4 max-w-[75rem] mx-auto">
-        <Nav />
         <section className="sm:h-[50rem] h-[40rem] flex items-center bgHero">
           <div className="flex flex-col gap-6 lg:w-[46rem] md:w-[36rem]">
             <span className="text-primaryBg uppercase text-2xl font-semibold leading-[1.3rem]">Transforma tus sueños en realidad</span>
@@ -124,84 +124,30 @@ export default function Home() {
         <section className="flex flex-col gap-7 items-center">
           <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[31rem] leading-[2.3rem] text-center">Testimonios</h2>
           <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4">
-          {[1, 2, 3, 4, 5, 6].map(item => (
-            <div key={item} className="shadow-[0px_4px_14px_#0000001a] rounded-3xl p-5 py-7 justify-center sm:justify-normal overflow-hidden relative flex flex-col  items-center">
-              <span>María Rodríguez</span>
-              <p>La prueba psico-orientadora me ayudó a aclarar mis ideas y ahora estudio lo que realmente me apasiona.</p>
+            {[1, 2, 3, 4, 5, 6].map(item => (
+              <div key={item} className="shadow-[0px_4px_14px_#0000001a] rounded-2xl p-5 py-7 justify-center sm:justify-normal overflow-hidden relative flex flex-col  items-center">
+                <span>María Rodríguez</span>
+                <p>La prueba psico-orientadora me ayudó a aclarar mis ideas y ahora estudio lo que realmente me apasiona.</p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="flex flex-col gap-8 justify-center sm:min-h-[20rem] py-9">
+          <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[31rem] text-start leading-[2.3rem] uppercase">Preguntas Frecuentes</h2>
+          <div className="flex items-start flex-col sm:flex-row justify-center gap-3">
+            <div className="flex flex-col gap-3">
+              {[1, 2].map(item => (
+                <Fasq key={item} />
+              ))}
             </div>
-          ))}
+            <div className="flex flex-col gap-3">
+              {[1, 2].map(item => (
+                <Fasq key={item} />
+              ))}
+            </div>
           </div>
         </section>
       </div>
     </>
   );
 }
-
-
-// <main>
-// <section className="bg-[#FBCD40] w-full">
-//   <div className="px-4 border max-w-[75rem] mx-auto">
-//     <Nav />
-//     <div className="flex items-center flex-col gap-3 mt-12 relative h-[50rem] overflow-hidden">
-//       <div className="bg-white w-max px-4 py-2 rounded-full">
-//         <span>Transforma tus sueños en realidad</span>
-//       </div>
-//       <div>
-//         <h1 className="text-5xl font-bold uppercase w-[35rem] text-center">Descubre tu camino académico con</h1>
-//         <h2 className="text-5xl font-bold uppercase w-[35rem] text-center text-outline">Trulivers</h2>
-//       </div>
-//       <p className="w-[28rem] text-center">Trulivers conecta a jóvenes con su vocación y abre las puertas hacia la educación superior, ofreciendo beneficios exclusivos con nuestras universidades aliadas.</p>
-//       <Image className="absolute w-[20rem] left-0 -bottom-[10pc] -rotate-6" src={movil} alt="Imagen de un telefono con una pantalla de la app de trulivers" />
-//       <Image className="absolute w-[20rem] left-1/2 -translate-x-1/2 -bottom-[7pc]" src={movil} alt="Imagen de un telefono con una pantalla de la app de trulivers" />
-//       <Image className="absolute w-[20rem] right-0 -bottom-[10pc] rotate-6" src={movil} alt="Imagen de un telefono con una pantalla de la app de trulivers" />
-//     </div>
-//   </div>
-// </section>
-// <section className={`${container} border h-[30rem] flex flex-col items-center justify-center`}>
-//   <h2 className="font-bold text-2xl mb-5">Nuestros Servicios</h2>
-//   <div className="grid grid-cols-2 items-center gap-5 justify-items-center">
-//     <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
-//       <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
-//         <Activity size='2rem' />
-//       </div>
-//       <h3 className="font-semibold text-xl text-center">Orientación Vocacional Personalizada</h3>
-//       <p className="text-sm text-center">Realiza nuestra prueba psico-orientadora y descubre la carrera ideal para ti.</p>
-//     </div>
-//     <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
-//       <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
-//         <Activity size='2rem' />
-//       </div>
-//       <h3 className="font-semibold text-xl">Acceso a Educación Superior</h3>
-//       <p className="text-sm text-center">Te conectamos con universidades aliadas que ofrecen programas académicos a tu medida.</p>
-//     </div>
-//     <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
-//       <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
-//         <Activity size='2rem' />
-//       </div>
-//       <h3 className="font-semibold text-xl">Cupones Exclusivos</h3>
-//       <p className="text-sm text-center">Obtén cupones con descuentos únicos de hasta el 60% en matrículas universitarias.</p>
-//     </div>
-//     <div className="items-center gap-1 w-[25rem] flex justify-center flex-col">
-//       <div className="bg-[#B8B8B8] w-max p-3 rounded-xl">
-//         <Activity size='2rem' />
-//       </div>
-//       <h3 className="font-semibold text-xl">Soporte Personalizado</h3>
-//       <p className="text-sm text-center">Nuestro equipo está disponible para ayudarte a resolver tus dudas sobre el proceso educativo.</p>
-//     </div>
-//   </div>
-// </section>
-// <section className={`${container} border`}>
-//   <div className="h-[45rem] flex items-end">
-//     <div className="grid grid-cols-2 w-full">
-//       <div className="flex justify-end">
-//         <Image className="w-[26rem]" src={aliados} alt="imagen de un telefono con el logo de TRULIVERS" />
-//       </div>
-//       <div className="overflow-hidden flex flex-col justify-center">
-//         <h2 className="font-extrabold text-2xl text-start uppercase w-[14rem]">Nuestros socios e inversores.</h2>
-//         <Carrucel />
-//         <button className="bg-[#F6C416] px-4 py-1 rounded-full w-max">Contáctate con nosotros</button>
-//       </div>
-//     </div>
-//   </div>
-// </section>
-// </main>
