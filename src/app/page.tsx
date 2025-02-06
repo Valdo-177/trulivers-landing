@@ -1,4 +1,3 @@
-import Nav from "@/components/layout/Nav";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import movilAliados from "@/assets/img/movilAliados.png"
