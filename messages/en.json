@@ -1,0 +1,46 @@
+{
+  "Navbar": {
+    "btn": "Take your FREE test"
+  },
+  "hero": {
+    "subTitle": "Turn your dreams into reality",
+    "title": "THE FIRST STEP TOWARDS YOUR PROFESSIONAL FUTURE BEGINS HERE",
+    "description1": "Discover the ideal career for you with",
+    "description2": "our free psycho-orientation test and get scholarship-like bonuses",
+    "description3": "exclusively to start your university education.",
+    "btn1": "Take your FREE test",
+    "btn2": "Get to know Trulivers"
+  },
+  "whyChoose": {
+    "title1": "¿WHY CHOOSE TRULIVERS FOR ",
+    "title2": "PLAN YOUR FUTURE",
+    "title_card1": "Personalized Vocational Test",
+    "description_card1": "Identify careers that align with your interests and skills.",
+    "title_card2": "Access to Partner Universities",
+    "description_card2": "Explore academic options at our top institutions.",
+    "title_card3": "Exclusive Bonuses and Discounts",
+    "description_card3": "Save up to 60% on undergraduate and graduate tuition fees.",
+    "title_card4": "Step-by-Step Guidance",
+    "description_card4": "Our team supports you at every stage, from orientation to enrollment."
+  },
+  "About": {
+    "subTitle": "About Trulivers",
+    "title1": "YOUR COMPANION ON THE PATH TO",
+    "title2": "HIGHER EDUCATION",
+    "description": "We inspire young people to discover their true vocation and achieve their academic dreams.",
+    "title_item1": "Personalized Guidance",
+    "description_item1": "Our test helps you connect your talents with the best academic opportunities.",
+    "title_item2": "Exclusive Benefits",
+    "description_item2": "Access coupons for recreational activities and tuition discounts thanks to our partnerships with top universities.",
+    "btn": "Claim your bonus here"
+  },
+  "Take": {
+    "title": "Take control of your future from the present with clarity and confidence."
+  },
+  "Testimonials": {
+    "title": "Testimonials"
+  },
+  "AskedQuestions": {
+    "title": "Frequently Asked Questions"
+  }
+}

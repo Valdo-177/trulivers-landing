@@ -1,0 +1,46 @@
+{
+  "Navbar": {
+    "btn": "Haz tu prueba GRATIS"
+  },
+  "hero": {
+    "subTitle": "Transforma tus sueños en realidad",
+    "title": "EL PRIMER PASO HACIA TU FUTURO PROFESIONAL COMIENZA AQUÍ",
+    "description1": "Descubre la carrera ideal para ti con",
+    "description2": "nuestra prueba de orientación vocacional gratuita y obtén bonos tipo beca",
+    "description3": "exclusivos para iniciar tu educación universitaria.",
+    "btn1": "Haz tu prueba GRATIS",
+    "btn2": "Conoce Trulivers"
+  },
+  "whyChoose": {
+    "title1": "¿POR QUÉ ELEGIR TRULIVERS PARA ",
+    "title2": "PLANIFICAR TU FUTURO",
+    "title_card1": "Prueba Vocacional Personalizada",
+    "description_card1": "Identifica carreras que se alineen con tus intereses y habilidades.",
+    "title_card2": "Acceso a Universidades Aliadas",
+    "description_card2": "Explora opciones académicas en nuestras instituciones destacadas.",
+    "title_card3": "Bonos y Descuentos Exclusivos",
+    "description_card3": "Ahorra hasta un 60 % en matrículas de pregrado y posgrado.",
+    "title_card4": "Asesoría Paso a Paso",
+    "description_card4": "Nuestro equipo te acompaña en cada etapa, desde la orientación hasta la matrícula."
+  },
+  "About": {
+    "subTitle": "Sobre Trulivers",
+    "title1": "TU COMPAÑERO EN EL CAMINO HACIA LA",
+    "title2": "EDUCACIÓN SUPERIOR",
+    "description": "Inspiramos a los jóvenes a descubrir su verdadera vocación y alcanzar sus sueños académicos.",
+    "title_item1": "Guía Personalizada",
+    "description_item1": "Nuestra prueba te ayuda a conectar tus talentos con las mejores oportunidades académicas.",
+    "title_item2": "Beneficios Exclusivos",
+    "description_item2": "Accede a cupones para actividades recreativas y descuentos en matrículas gracias a nuestras alianzas con universidades destacadas.",
+    "btn": "Reclama tu bono aquí"
+  },
+  "Take": {
+    "title": "Toma el control de tu futuro desde el presente con claridad y confianza."
+  },
+  "Testimonials": {
+    "title": "Testimonios"
+  },
+  "AskedQuestions": {
+    "title": "Preguntas Frecuentes"
+  }
+}
