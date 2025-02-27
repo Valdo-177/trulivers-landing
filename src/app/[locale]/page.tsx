@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import movilAliados from "@/assets/img/movilAliados.png"
 import { IconBenet, LogoUni } from "@/assets/svg";
 import { motion, useInView } from "motion/react"
-import helpPeople from "@/assets/img/joven.png"
+import helpPeople from "@/assets/img/imagen_Conpañeros.jpg"
 import Fasq from "@/components/ui/Fasq";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
@@ -108,7 +108,7 @@ export default function Home() {
             <span className="text-primaryBg uppercase text-2xl font-semibold leading-[1.3rem]">{heroTranslate("subTitle")}</span>
             {/* <h1 className="text-[#3D3D3D] text-4xl lg:text-5xl font-extrabold sm:leading-[3.5rem] leading-[2.1rem]">{heroTranslate("title")}</h1> */}
             <div className="max-w-[45rem]">
-            <WordsPullUp text={heroTranslate("title")} className="text-[#3D3D3D] text-4xl lg:text-5xl font-extrabold sm:leading-[3.5rem] leading-[2.1rem] uppercase" />
+              <WordsPullUp text={heroTranslate("title")} className="text-[#3D3D3D] text-4xl lg:text-5xl font-extrabold sm:leading-[3.5rem] leading-[2.1rem] uppercase" />
             </div>
             <p className="text-[#525252] leading-7 sm:w-[30rem]">{heroTranslate("description1")} <strong>{heroTranslate("description2")}</strong> {heroTranslate("description3")}</p>
             <div className="flex items-center gap-5">
@@ -160,11 +160,11 @@ export default function Home() {
             <IconRow2 className="hidden sm:block" />
           </div>
         </section> */}
-        <section className="flex items-center justify-evenly h-[40rem]">
-          <div className="hidden lg:block">
-            <Image src={helpPeople} alt="Imagen de seccion acerca de TRULIVERS" />
+        <section className="flex flex-col sm:flex-row items-center justify-evenly h-[55rem]">
+          <div className="w-full sm:w-[50%] flex items-center justify-center">
+            <Image src={helpPeople} className="w-[40rem]" alt="Imagen de seccion acerca de TRULIVERS" />
           </div>
-          <div className="grid gap-5">
+          <div className="grid gap-5 ">
             <div>
               <span className="text-primaryBg uppercase sm:text-[20px] text-[16px] font-semibold">{aboutTranslate("subTitle")}</span>
               <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[31rem] text-start leading-[2.3rem]">{aboutTranslate("title1")}<span className="text-primaryBg">{` ${aboutTranslate("title2")}`}</span>?</h2>
@@ -185,14 +185,19 @@ export default function Home() {
         </section>
         <section className="flex flex-col gap-7 items-center">
           <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[31rem] leading-[2.3rem] text-center">{testimonialsTranslate("title")}</h2>
-          <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-3">
+            <video controls src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/Video%20de%20WhatsApp%202023-09-23%20a%20las%2014.30.02.mp4?alt=media&token=b6f538e2-565c-41fc-bd31-d82794245dc8"></video>
+            <video controls src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/Video%20de%20WhatsApp%202023-09-23%20a%20las%2012.49.53.mp4?alt=media&token=486a82cd-0592-472b-b33e-f0197a5f31f8"></video>
+            <video controls src="https://firebasestorage.googleapis.com/v0/b/fb-picporter.appspot.com/o/Video%20de%20WhatsApp%202023-09-23%20a%20las%2012.50.33.mp4?alt=media&token=e1fd610f-8420-4b56-9ecc-f559065754ef"></video>
+          </div>
+          {/* <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4">
             {[1, 2, 3, 4, 5, 6].map(item => (
               <div key={item} className="shadow-[0px_4px_14px_#0000001a] rounded-2xl p-5 py-7 justify-center sm:justify-normal overflow-hidden relative flex flex-col  items-center">
                 <span>María Rodríguez</span>
                 <p>La prueba psico-orientadora me ayudó a aclarar mis ideas y ahora estudio lo que realmente me apasiona.</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
         <section className="flex flex-col gap-8 justify-center sm:min-h-[20rem] py-9">
           <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[31rem] text-start leading-[2.3rem] uppercase">{askedQuestionsTranslate("title")}</h2>

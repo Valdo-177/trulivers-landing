@@ -20,7 +20,7 @@ body {
 
 .bgHero {
   background-image: linear-gradient(to right, white 41%, rgba(255, 255, 255, 0) 75%),
-    url("../assets/img/heroBg.png");
+    url("../assets/img/bgTrulivers.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

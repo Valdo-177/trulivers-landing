@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react'
 import LanguageSelector from '../ui/SelectLanguaje'
 import { Button } from '../ui/button'
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import logo from "@/assets/img/logo.png"
+import logo1 from "@/assets/img/logo1.png"
 
 const Nav = () => {
   const [showNav, setShowNav] = useState(true);
@@ -45,8 +48,10 @@ const Nav = () => {
 
   return (
     <header className={`h-[5rem] flex items-center fixed z-30 top-0 left-0 w-full text-white transition-all duration-500 ${showNav ? "translate-y-0" : "-translate-y-full"}  ${isScrolled ? "bg-[#fdfdfdd6] backdrop-blur-lg" : "bg-transparent"}`}>
-      <div className='text-black h-[50px] px-4 max-w-[90%] mx-auto w-full rounded-[16px] flex items-center justify-between'>
-        <span className='font-bold'>TRULIVERS</span>
+      <div className='text-black h-[50px] sm:px-4 px-0 max-w-[90%] mx-auto w-full rounded-[16px] flex items-center justify-between'>
+        <Image src={logo} alt="" className='w-[14rem] hidden sm:block'/>
+        <Image src={logo1} alt="" className='w-[3rem] sm:hidden'/>
+        {/* <span className='font-bold'>TRULIVERS</span> */}
         {/* <nav className='flex items-center gap-2 bg-[#F7F7FD] px-[1rem] py-[0.5rem] rounded-[50px]'>
           <Link href='#' className='text-[14px]'>HOME</Link>
           <Link href='#' className='text-[14px]'>HOME</Link>

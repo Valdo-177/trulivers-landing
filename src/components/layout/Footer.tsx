@@ -7,7 +7,6 @@ const Footer = () => {
                 <div>
                     <div className='flex flex-col items-start'>
                         <h2 className='text-lg text-primaryBg font-bold mb-3'>TRULIVERS</h2>
-                        <span className='font-light text-sm'>Direccion:---------</span>
                         <span className='font-light text-sm'>Telefono:---------</span>
                         <span className='font-light text-sm'>Correo electronico:---------</span>
                     </div>
