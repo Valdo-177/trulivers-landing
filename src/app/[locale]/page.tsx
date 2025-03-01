@@ -2,13 +2,23 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import movilAliados from "@/assets/img/movilAliados.png"
-import { IconBenet, LogoUni } from "@/assets/svg";
+import { IconBenet } from "@/assets/svg";
 import { motion, useInView } from "motion/react"
 import helpPeople from "@/assets/img/imagen_Conpañeros.jpg"
 import Fasq from "@/components/ui/Fasq";
 import { useTranslations } from "next-intl";
 import { useRef } from "react";
 import { cn } from "@/lib/utils";
+import uniSimon from "@/assets/img/Unisimon_logo.png"
+import sena from "@/assets/img/LOGO-TECNOPARQUE.png"
+import corona from "@/assets/img/fundacionCorona.png"
+import botnar from "@/assets/img/fundacionBotnar.png"
+import apalanca from "@/assets/img/LOGO-APPALANCA.png"
+import colombiaciena from "@/assets/img/colombiaCiencia.png"
+import salamanca from "@/assets/img/salamanca.png"
+import autonoma from "@/assets/img/autonoma.png"
+import emprende from "@/assets/img/emprende.png"
+import italiano from "@/assets/img/ponte.png"
 
 
 function WordsPullUp({
@@ -177,10 +187,17 @@ export default function Home() {
         </section>
         <section className="flex items-center mb-[4rem] flex-col justify-center gap-[3rem]">
           <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[33rem] text-center sm:leading-[2.3rem]">{takeTranslate("title")}</h2>
-          <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 w-full gap-y-7 justify-items-center">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => (
-              <LogoUni key={item} />
-            ))}
+          <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 w-full gap-7 justify-items-center items-center ">
+            <Image src={uniSimon} className="max-h-[403px]" alt="Logo de la universidad simon bolivar" />
+            <Image src={sena} className="max-h-[403px]" alt="Logo de Tecnoparque" />
+            <Image src={corona} className="max-h-[403px]" alt="Logo de fundación corona" />
+            <Image src={botnar} height={90} className="max-h-[403px]" alt="Logo de fundación Botnar" />
+            <Image src={apalanca} className="max-h-[403px]" alt="Logo de Appalanca" />  
+            <Image src={colombiaciena} className="max-h-[403px]" alt="Logo de ministerio de ciencias de colombia" />
+            <Image src={salamanca} className="max-h-[403px]" alt="Logo de universidad Salamanca" />
+            <Image src={autonoma} height={90} className="max-h-[403px]" alt="Logo de universidad autonoma" />
+            <Image src={emprende} height={90} className="max-h-[403px]" alt="Logo de Emprende Uninorte" />
+            <Image src={italiano} height={90} className="max-h-[403px]" alt="Logo de Ponte Italiano" />
           </div>
         </section>
         <section className="flex flex-col gap-7 items-center">
