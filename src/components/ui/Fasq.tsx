@@ -2,7 +2,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-const Fasq = () => {
+const Fasq = ({ data }: {
+    data: {
+        title: string,
+        anwer: string,
+        number: string,
+    }
+}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleAccordion = () => setIsOpen(!isOpen);
@@ -21,18 +27,18 @@ const Fasq = () => {
             >
                 <div className="flex items-center gap-4">
                     <div
-                        className={`flex items-center justify-center w-10 h-10 transition-all ease-in-out duration-600 rounded-full text-lg font-bold ${!isOpen ? "bg-primaryBg text-white" : "bg-gray-100 text-gray-700"
+                        className={`flex items-center justify-center min-w-10 min-h-10 transition-all ease-in-out duration-600 rounded-full text-lg font-bold ${!isOpen ? "bg-primaryBg text-white" : "bg-gray-100 text-gray-700"
                             }`}
                     >
-                        04
+                        {data.number || "04"}
                     </div>
 
                     <h3
                         className="text-xl font-medium text-[#1E242C]"
-                        // className={`text-xl font-medium ${isOpen ? "text-primaryBg" : "text-gray-900"
-                            // }`}
+                    // className={`text-xl font-medium ${isOpen ? "text-primaryBg" : "text-gray-900"
+                    // }`}
                     >
-                        ¿Cómo funciona el test vocacional?
+                        {data.title || "¿Cómo funciona el test vocacional?"}
                     </h3>
                 </div>
                 <motion.span
@@ -51,9 +57,7 @@ const Fasq = () => {
                 transition={{ duration: 0.3 }}
             >
                 <p className="h-full overflow-hidden">
-                    El test es una herramienta gratuita y fácil de usar. Una vez
-                    registrado, puedes completarlo en minutos y recibir recomendaciones
-                    personalizadas.
+                    {data.anwer || "El test es una herramienta gratuita y fácil de usar. Una vez registrado, puedes completarlo en minutos y recibir recomendaciones personalizadas."}
                 </p>
             </motion.div>
         </motion.div>

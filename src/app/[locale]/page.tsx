@@ -192,7 +192,7 @@ export default function Home() {
             <Image src={sena} className="max-h-[403px]" alt="Logo de Tecnoparque" />
             <Image src={corona} className="max-h-[403px]" alt="Logo de fundación corona" />
             <Image src={botnar} height={90} className="max-h-[403px]" alt="Logo de fundación Botnar" />
-            <Image src={apalanca} className="max-h-[403px]" alt="Logo de Appalanca" />  
+            <Image src={apalanca} className="max-h-[403px]" alt="Logo de Appalanca" />
             <Image src={colombiaciena} className="max-h-[403px]" alt="Logo de ministerio de ciencias de colombia" />
             <Image src={salamanca} className="max-h-[403px]" alt="Logo de universidad Salamanca" />
             <Image src={autonoma} height={90} className="max-h-[403px]" alt="Logo de universidad autonoma" />
@@ -220,14 +220,28 @@ export default function Home() {
           <h2 className="font-semibold text-2xl text-[#3D3D3D] sm:w-[31rem] text-start leading-[2.3rem] uppercase">{askedQuestionsTranslate("title")}</h2>
           <div className="flex items-start flex-col sm:flex-row justify-center gap-3">
             <div className="flex flex-col gap-3">
-              {[1, 2].map(item => (
-                <Fasq key={item} />
-              ))}
+              <Fasq data={{
+                title: "¿Cómo funciona el test de orientación vocacional de Trulivers?",
+                anwer: "El test evalúa tus intereses, habilidades y preferencias para recomendarte carreras y programas académicos que se ajusten a tu perfil. Responde una serie de preguntas y al finalizar recibirás resultados personalizados con opciones de estudio y universidades aliadas.",
+                number: "01"
+              }} />
+              <Fasq data={{
+                title: "¿Cuánto tiempo toma completar el test?",
+                anwer: "El test es rápido y sencillo, toma aproximadamente 10 a 15 minutos. Al finalizar, obtendrás tus resultados de inmediato y podrás explorar las oportunidades educativas que mejor se adapten a ti.",
+                number: "02"
+              }} />
             </div>
             <div className="flex flex-col gap-3">
-              {[1, 2].map(item => (
-                <Fasq key={item} />
-              ))}
+              <Fasq data={{
+                title: "¿El test tiene algún costo?",
+                anwer: "No, el test de orientación vocacional de Trulivers es completamente gratuito. Queremos ayudarte a tomar la mejor decisión para tu futuro sin barreras económicas.",
+                number: "03"
+             }} />
+              <Fasq data={{
+                title: "¿Qué hago después de recibir mis resultados?",
+                anwer: "Después de conocer tu perfil vocacional, podrás acceder a información sobre universidades, programas académicos y cupones especiales para facilitar tu ingreso a la educación superior. También puedes contactar directamente con nuestras universidades aliadas para recibir más información.",
+                number: "04"
+              }} />
             </div>
           </div>
         </section>
