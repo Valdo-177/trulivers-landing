@@ -41,6 +41,18 @@
     "title": "Testimonios"
   },
   "AskedQuestions": {
-    "title": "Preguntas Frecuentes"
+    "title": "Preguntas Frecuentes",
+    "Fasq1": "¿Cómo funciona el test de orientación vocacional de Trulivers?",
+    "Anwer1": "El test evalúa tus intereses, habilidades y preferencias para recomendarte carreras y programas académicos que se ajusten a tu perfil. Responde una serie de preguntas y al finalizar recibirás resultados personalizados con opciones de estudio y universidades aliadas.",
+    "Fasq2": "¿Cuánto tiempo toma completar el test?",
+    "Anwer2": "El test es rápido y sencillo, toma aproximadamente 10 a 15 minutos. Al finalizar, obtendrás tus resultados de inmediato y podrás explorar las oportunidades educativas que mejor se adapten a ti.",
+    "Fasq3": "¿El test tiene algún costo?",
+    "Anwer3": "No, el test de orientación vocacional de Trulivers es completamente gratuito. Queremos ayudarte a tomar la mejor decisión para tu futuro sin barreras económicas.",
+    "Fasq4": "¿Qué hago después de recibir mis resultados?",
+    "Anwer4": "Después de conocer tu perfil vocacional, podrás acceder a información sobre universidades, programas académicos y cupones especiales para facilitar tu ingreso a la educación superior. También puedes contactar directamente con nuestras universidades aliadas para recibir más información."
+  },
+  "footer": {
+    "item1": "Teléfono",
+    "item2": "Correo electrónico"
   }
 }

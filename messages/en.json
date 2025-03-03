@@ -41,6 +41,18 @@
     "title": "Testimonials"
   },
   "AskedQuestions": {
-    "title": "Frequently Asked Questions"
+    "title": "Frequently Asked Questions",
+    "Fasq1": "How does Trulivers' career orientation test work?",
+    "Anwer1": "The test evaluates your interests, skills, and preferences to recommend careers and academic programs that match your profile. Answer a series of questions, and at the end, you will receive personalized results with study options and partner universities.",
+    "Fasq2": "How long does it take to complete the test?",
+    "Anwer2": "The test is quick and simple; it takes approximately 10 to 15 minutes. Once completed, you will receive your results immediately and can explore the educational opportunities that best fit you.",
+    "Fasq3": "Does the test have any cost?",
+    "Anwer3": "No, Trulivers' career orientation test is completely free. We want to help you make the best decision for your future without financial barriers.",
+    "Fasq4": "What should I do after receiving my results?",
+    "Anwer4": "After learning about your vocational profile, you will have access to information about universities, academic programs, and special coupons to facilitate your entry into higher education. You can also contact our partner universities directly for more information."
+  },
+  "footer": {
+    "item1": "Phone",
+    "item2": "Email"
   }
 }

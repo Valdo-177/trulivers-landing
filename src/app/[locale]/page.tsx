@@ -221,25 +221,25 @@ export default function Home() {
           <div className="flex items-start flex-col sm:flex-row justify-center gap-3">
             <div className="flex flex-col gap-3">
               <Fasq data={{
-                title: "¿Cómo funciona el test de orientación vocacional de Trulivers?",
-                anwer: "El test evalúa tus intereses, habilidades y preferencias para recomendarte carreras y programas académicos que se ajusten a tu perfil. Responde una serie de preguntas y al finalizar recibirás resultados personalizados con opciones de estudio y universidades aliadas.",
+                title: askedQuestionsTranslate("Fasq1"),
+                anwer: askedQuestionsTranslate("Anwer1"),
                 number: "01"
               }} />
               <Fasq data={{
-                title: "¿Cuánto tiempo toma completar el test?",
-                anwer: "El test es rápido y sencillo, toma aproximadamente 10 a 15 minutos. Al finalizar, obtendrás tus resultados de inmediato y podrás explorar las oportunidades educativas que mejor se adapten a ti.",
+                title: askedQuestionsTranslate("Fasq2"),
+                anwer: askedQuestionsTranslate("Anwer2"),
                 number: "02"
               }} />
             </div>
             <div className="flex flex-col gap-3">
               <Fasq data={{
-                title: "¿El test tiene algún costo?",
-                anwer: "No, el test de orientación vocacional de Trulivers es completamente gratuito. Queremos ayudarte a tomar la mejor decisión para tu futuro sin barreras económicas.",
+                title: askedQuestionsTranslate("Fasq3"),
+                anwer: askedQuestionsTranslate("Anwer3"),
                 number: "03"
-             }} />
+              }} />
               <Fasq data={{
-                title: "¿Qué hago después de recibir mis resultados?",
-                anwer: "Después de conocer tu perfil vocacional, podrás acceder a información sobre universidades, programas académicos y cupones especiales para facilitar tu ingreso a la educación superior. También puedes contactar directamente con nuestras universidades aliadas para recibir más información.",
+                title: askedQuestionsTranslate("Fasq4"),
+                anwer: askedQuestionsTranslate("Anwer4"),
                 number: "04"
               }} />
             </div>
