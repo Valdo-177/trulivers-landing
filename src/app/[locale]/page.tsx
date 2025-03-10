@@ -19,6 +19,7 @@ import salamanca from "@/assets/img/salamanca.png"
 import autonoma from "@/assets/img/autonoma.png"
 import emprende from "@/assets/img/emprende.png"
 import italiano from "@/assets/img/ponte.png"
+import Script from 'next/script'
 
 
 function WordsPullUp({
@@ -111,6 +112,16 @@ export default function Home() {
 
   return (
     <>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-R60TCJYEEC"></Script>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-R60TCJYEEC');
+        `}
+        console.log("se cargo")
+      </Script>
       <div className="px-4 max-w-[75rem] mx-auto pt-[6rem] 2xl:max-w-[100rem]">
 
         <section className="sm:h-[50rem] h-[40rem] flex items-center bgHero">
