@@ -115,12 +115,11 @@ export default function Home() {
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-R60TCJYEEC"></Script>
       <Script id="google-analytics" strategy="afterInteractive">
         {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-R60TCJYEEC');
-        `}
-        console.log("se cargo")
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R60TCJYEEC');
+  `}
       </Script>
       <div className="px-4 max-w-[75rem] mx-auto pt-[6rem] 2xl:max-w-[100rem]">
 
