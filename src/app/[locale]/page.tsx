@@ -133,16 +133,17 @@ export default function Home() {
               <WordsPullUp text={heroTranslate("title")} className="text-[#3D3D3D] text-4xl lg:text-5xl font-extrabold sm:leading-[3.5rem] leading-[2.1rem] uppercase" />
             </div>
             <p className="text-[#525252] leading-7 sm:w-[30rem]">{heroTranslate("description1")} <strong>{heroTranslate("description2")}</strong> {heroTranslate("description3")}</p>
-            <div className="flex items-center gap-4">
-              {/* <Button className='bg-primaryBg md:bg-red-600 lg:bg-blue-500 xl:bg-green-400 2xl:bg-slate-500  hover:bg-[#0B0DC2] rounded-[50px] h-[43px]'>{translate("btn")}</Button> */}
+            <div className="flex items-center gap-4 flex-col sm:flex-row">
+              {/* <Button className='bg-primaryBg md:bg-red-600 lg:bg-blue-500 xl:bg-green-400 2xl:bg-slate-500  hover:bg-[#0B0DC2] rounded-[50px] h-[43px]'>Keyner</Button> */}
               <Button className='bg-primaryBg hover:bg-[#0B0DC2] h-[43px]'>{heroTranslate("btn1")}</Button>
-              <Link href='https://apps.apple.com/co/app/trulivers/id6446598356' target="_blank">
-                <Image src={appStore} alt="Boton de App Store" className="h-[43px] w-max" />
-              </Link>
-              <Link href='https://play.google.com/store/apps/details?id=com.truliapp&hl=es_419' target="_blank">
-                <Image src={googlePlay} alt="Boton de App Store" className="h-[43px] w-max" />
-              </Link>
-              {/* <Button className='bg-primaryBg hover:bg-[#0B0DC2] rounded-[50px] h-[43px]'>{heroTranslate("btn2")}</Button> */}
+              <div className="flex items-center gap-4">
+                <Link href='https://apps.apple.com/co/app/trulivers/id6446598356' target="_blank">
+                  <Image src={appStore} alt="Boton de App Store" className="h-[43px] w-max" />
+                </Link>
+                <Link href='https://play.google.com/store/apps/details?id=com.truliapp&hl=es_419' target="_blank">
+                  <Image src={googlePlay} alt="Boton de App Store" className="h-[43px] w-max" />
+                </Link>
+              </div>
             </div>
           </div>
         </section>

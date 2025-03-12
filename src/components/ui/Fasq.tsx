@@ -16,7 +16,7 @@ const Fasq = ({ data }: {
     return (
         <motion.div
             className={`rounded-2xl p-4 shadow-md ${isOpen ? "bg-[#1e20dc2e]" : "bg-white"
-                } w-full sm:w-[30rem] flex items-center justify-center flex-col`}
+                } w-full 2xl:w-[30rem] flex items-center justify-center flex-col`}
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
